@@ -1,0 +1,24 @@
+{
+  "bigtime_foresight_api": {
+    "description": "BigTime Foresight API configuration for forecast data access",
+    "auth_url": "https://foresight-api.bigtime.net/auth/token/",
+    "base_url": "https://foresight-api.bigtime.net/beta/",
+    "client_id": "YOUR_CLIENT_ID_HERE",
+    "client_secret": "YOUR_CLIENT_SECRET_HERE",
+    "default_scope": "read",
+    "available_scopes": ["read", "write", "finance"],
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "note": "Exceeding this limit will result in 429 errors"
+    },
+    "pagination": {
+      "default_page_size": 50,
+      "max_page_size": 100
+    }
+  },
+  "tool_settings": {
+    "timeout_ms": 30000,
+    "retry_on_rate_limit": false,
+    "log_api_calls": true
+  }
+}
