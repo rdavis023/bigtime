@@ -13,68 +13,86 @@
  */
 
 /*
-{
-  "type": "object",
-  "properties": {
-    "api_type": {
-      "type": "string",
-      "description": "API type: 'iq' for BigTime IQ API v2 or 'foresight' for Foresight API",
-      "enum": ["iq", "foresight"],
-      "default": "iq"
+[
+    {
+        "property": "api_type",
+        "type": "string",
+        "description": "API type: 'iq' for BigTime IQ API v2 or 'foresight' for Foresight API",
+        "required": false
     },
-    "username": {
-      "type": "string",
-      "description": "BigTime IQ API username (email). Required if api_type='iq'"
+    {
+        "property": "username",
+        "type": "string",
+        "description": "BigTime IQ API username (email). Required if api_type='iq'",
+        "required": false
     },
-    "password": {
-      "type": "string",
-      "description": "BigTime IQ API password. Required if api_type='iq'"
+    {
+        "property": "password",
+        "type": "string",
+        "description": "BigTime IQ API password. Required if api_type='iq'",
+        "required": false
     },
-    "auth_realm": {
-      "type": "string",
-      "description": "BigTime IQ API auth realm/firm ID. Required if api_type='iq'"
+    {
+        "property": "auth_realm",
+        "type": "string",
+        "description": "BigTime IQ API auth realm/firm ID. Required if api_type='iq'",
+        "required": false
     },
-    "client_id": {
-      "type": "string",
-      "description": "BigTime Foresight API OAuth2 client ID. Required if api_type='foresight'"
+    {
+        "property": "client_id",
+        "type": "string",
+        "description": "BigTime Foresight API OAuth2 client ID. Required if api_type='foresight'",
+        "required": false
     },
-    "client_secret": {
-      "type": "string",
-      "description": "BigTime Foresight API OAuth2 client secret. Required if api_type='foresight'"
+    {
+        "property": "client_secret",
+        "type": "string",
+        "description": "BigTime Foresight API OAuth2 client secret. Required if api_type='foresight'",
+        "required": false
     },
-    "scope": {
-      "type": "string",
-      "description": "OAuth2 scope for Foresight API (default: 'read')",
-      "default": "read"
+    {
+        "property": "scope",
+        "type": "string",
+        "description": "OAuth2 scope for Foresight API (default: 'read'). Options: 'read', 'write', 'finance'",
+        "required": false
     },
-    "report_id": {
-      "type": "string",
-      "description": "Optional: Specific report ID to retrieve from IQ API"
+    {
+        "property": "report_id",
+        "type": "string",
+        "description": "Optional: Specific report ID to retrieve from IQ API",
+        "required": false
     },
-    "forecast_id": {
-      "type": "string",
-      "description": "Optional: Specific forecast ID to retrieve from Foresight API"
+    {
+        "property": "forecast_id",
+        "type": "string",
+        "description": "Optional: Specific forecast ID to retrieve from Foresight API",
+        "required": false
     },
-    "start_date": {
-      "type": "string",
-      "description": "Optional: Start date for filter (YYYY-MM-DD)"
+    {
+        "property": "start_date",
+        "type": "string",
+        "description": "Optional: Start date for filter (YYYY-MM-DD)",
+        "required": false
     },
-    "end_date": {
-      "type": "string",
-      "description": "Optional: End date for filter (YYYY-MM-DD)"
+    {
+        "property": "end_date",
+        "type": "string",
+        "description": "Optional: End date for filter (YYYY-MM-DD)",
+        "required": false
     },
-    "page_size": {
-      "type": "number",
-      "description": "Optional: Results per page (default: 50, max: 100)",
-      "default": 50
+    {
+        "property": "page_size",
+        "type": "number",
+        "description": "Optional: Results per page (default: 50, max: 100)",
+        "required": false
     },
-    "filters": {
-      "type": "string",
-      "description": "Optional: JSON string of additional filters"
+    {
+        "property": "filters",
+        "type": "string",
+        "description": "Optional: JSON string of additional filters",
+        "required": false
     }
-  },
-  "required": []
-}
+]
 */
 
 /**
