@@ -1,0 +1,21 @@
+{
+  "name": "bigtime-flowise-forecast-tool",
+  "version": "1.0.0",
+  "description": "Custom Flowise AI tool to pull forecast data from BigTime Foresight API",
+  "main": "BigTimeForecastTool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flowise",
+    "bigtime",
+    "forecast",
+    "custom-tool",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
